@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CasaGram</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+  <h2>CasaGram</h2>
+</div>
+
+<div class="container">
+
+  <div class="profile-section">
+    <img id="profilePic" src="" class="profile-pic">
+    <input type="file" id="picInput" accept="image/*">
+    <input type="text" id="nameInput" placeholder="Seu nome">
+    <button onclick="saveProfile()">Salvar Perfil</button>
+  </div>
+
+  <h3>Tarefas</h3>
+
+  <div id="taskList"></div>
+
+  <div class="add-task">
+    <input type="text" id="taskInput" placeholder="Digite a tarefa">
+    <button onclick="addTask()">Adicionar</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
