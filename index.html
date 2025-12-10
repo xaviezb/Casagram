@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Casagram</title>
 
     <style>
@@ -12,117 +12,77 @@
             background: #fafafa;
         }
 
-        header {
-            background: white;
+        /* Cabeçalho estilo Instagram */
+        .topbar {
+            background: #fff;
             padding: 15px;
-            text-align: center;
-            font-size: 22px;
+            font-size: 25px;
             font-weight: bold;
             border-bottom: 1px solid #ddd;
         }
 
-        .feed {
-            max-width: 600px;
-            margin: auto;
+        .task {
+            background: white;
+            margin: 15px;
             padding: 15px;
-        }
-
-        .perfil {
-            background: #fff;
-            padding: 15px;
-            border-radius: 12px;
-            margin-bottom: 20px;
+            border-radius: 10px;
             border: 1px solid #ddd;
         }
 
-        .perfil img {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            object-fit: cover;
+        .task h3 {
+            margin: 0 0 10px;
         }
 
-        .linha {
+        .profile {
             display: flex;
             align-items: center;
-            gap: 15px;
-        }
-
-        .nome {
-            font-size: 18px;
-            font-weight: bold;
-        }
-
-        .tarefas {
             margin-top: 10px;
-            font-size: 16px;
         }
 
-        .task-item {
-            background: #eee;
-            padding: 10px;
-            border-radius: 10px;
-            margin-top: 5px;
+        .profile img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .addtask {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: black;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 30px;
+            font-size: 18px;
         }
     </style>
 </head>
-
 <body>
 
-<header>Casagram 🏠</header>
+    <div class="topbar">Casagram</div>
 
-<div class="feed">
+    <div class="task">
+        <h3>Lavar a louça</h3>
+        <p>Fazer até 20h</p>
 
-    <!-- PERFIL 1 -->
-    <div class="perfil">
-        <div class="linha">
-            <img src="https://i.imgur.com/3GvwNBf.png">
-            <div class="nome">Marcos</div>
-        </div>
-
-        <div class="tarefas">
-            <div class="task-item">🧹 Varreu a casa</div>
-            <div class="task-item">🗑 Levou o lixo</div>
+        <div class="profile">
+            <img src="https://i.imgur.com/4ZQZ4KJ.png">
+            <span>Responsável: João</span>
         </div>
     </div>
 
-    <!-- PERFIL 2 -->
-    <div class="perfil">
-        <div class="linha">
-            <img src="https://i.imgur.com/zPzV6aG.jpeg">
-            <div class="nome">Pessoa 2</div>
-        </div>
+    <div class="task">
+        <h3>Varrer a sala</h3>
+        <p>Fazer até 22h</p>
 
-        <div class="tarefas">
-            <div class="task-item">🍽 Lavou a louça</div>
+        <div class="profile">
+            <img src="https://i.imgur.com/4ZQZ4KJ.png">
+            <span>Responsável: Maria</span>
         </div>
     </div>
 
-    <!-- PERFIL 3 -->
-    <div class="perfil">
-        <div class="linha">
-            <img src="https://i.imgur.com/3GvwNBf.png">
-            <div class="nome">Pessoa 3</div>
-        </div>
-
-        <div class="tarefas">
-            <div class="task-item">🧺 Lavou as roupas</div>
-        </div>
-    </div>
-
-    <!-- PERFIL 4 -->
-    <div class="perfil">
-        <div class="linha">
-            <img src="https://i.imgur.com/zPzV6aG.jpeg">
-            <div class="nome">Pessoa 4</div>
-        </div>
-
-        <div class="tarefas">
-            <div class="task-item">🥩 Fez o jantar</div>
-        </div>
-    </div>
-
-</div>
+    <div class="addtask">+ Criar tarefa</div>
 
 </body>
 </html>
